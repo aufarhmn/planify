@@ -4,6 +4,6 @@ Planify is a desktop app that aims to enhance user productivity. Since Planify i
 <br><br>
 By: ***a few good men*** <br>
 Ketua Kelompok: <br>
-Anggota 1: <br>
-Anggota 2: Aufa Nasywa Rahman (21/475255/TK/52454) <br>
+Anggota 1: Agustinus Angelo Christian Fernando - 21/473804/TK/52235 <br>
+Anggota 2: Aufa Nasywa Rahman - 21/475255/TK/52454 <br>
 Anggota 3: 
