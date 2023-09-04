@@ -6,4 +6,4 @@ By: **_a few good men_** <br>
 Ketua Kelompok: Aufa Nasywa Rahman - 21/475255/TK/52454 <br>
 Anggota 1: Agustinus Angelo Christian Fernando - 21/473804/TK/52235 <br>
 Anggota 2: <br>
-Anggota 3: 
+Anggota 3: Difta Fitrahul Qihaj - 21/480096/TK/52975
