@@ -32,13 +32,9 @@ namespace Planify
         {
             get { return _password; }
         }
-        public string fotoProfile
+        public string fotoProfil
         {
             get { return _fotoProfil; }
         }
-        //public Dictionary postDataRegisterToDatabase(string name, string email, string password)
-        //{
-
-        //}
     }
 }
