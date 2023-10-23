@@ -29,7 +29,7 @@
                 <SolidColorBrush Color="White" Opacity="0.7"/>
             </TextBox.Background>
         </TextBox>
-        <Button Content="Login" HorizontalAlignment="Center" Margin="0,281,0,0" VerticalAlignment="Top" Height="29" Width="98" FontWeight="SemiBold" Foreground="White" >
+        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Center" Margin="0,281,0,0" VerticalAlignment="Top" Height="29" Width="98" FontWeight="SemiBold" Foreground="White" >
             <Button.Background>
                 <SolidColorBrush Color="Black" Opacity="0.695"/>
             </Button.Background>
@@ -40,7 +40,7 @@
             </Button.Resources>
         </Button>
         <TextBlock HorizontalAlignment="Center" Margin="0,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Don't have an account?"/><LineBreak/><Run/></TextBlock>
-        <Button Content="Register" HorizontalAlignment="Center" Margin="0,376,0,0" VerticalAlignment="Top" Height="27" Width="98" FontWeight="SemiBold" Foreground="White">
+        <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Center" Margin="0,376,0,0" VerticalAlignment="Top" Height="27" Width="98" FontWeight="SemiBold" Foreground="White" Click="btnRegister_Click">
             <Button.Background>
                 <SolidColorBrush Color="Black" Opacity="0.695"/>
             </Button.Background>

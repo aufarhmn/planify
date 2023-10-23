@@ -24,5 +24,16 @@ namespace Planify
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            LoginPage newPage = new LoginPage();
+            this.NavigationService.Navigate(newPage);
+        }
     }
 }

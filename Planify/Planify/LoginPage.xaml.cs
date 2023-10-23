@@ -34,5 +34,11 @@ namespace Planify
         {
 
         }
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            RegisterPage newPage = new RegisterPage();
+            this.NavigationService.Navigate(newPage);
+        }
     }
 }
