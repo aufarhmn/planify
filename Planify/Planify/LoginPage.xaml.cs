@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,8 +21,12 @@ namespace Planify
     /// </summary>
     public partial class LoginPage : Page
     {
+
+        private NpgsqlConnection conn;
+        string connstring = "Host=20.24.68.238;Port=5432;Username=planify-admin;Password=Planify123Junpro;Database=planify";
         public LoginPage()
         {
+            conn = new NpgsqlConnection(connstring);
             InitializeComponent();
         }
 
@@ -39,6 +44,14 @@ namespace Planify
         {
             RegisterPage newPage = new RegisterPage();
             this.NavigationService.Navigate(newPage);
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+           
+
+           /* CreateTask newPage = new CreateTask();
+            this.NavigationService.Navigate(newPage);*/
         }
     }
 }

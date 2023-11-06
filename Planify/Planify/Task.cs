@@ -12,23 +12,57 @@ namespace Planify
         private string _category;
         private DateTime _dateEnd;
 
-        public Task(string userId, string taskId, string title, string description, string category, DateTime dateCreated, DateTime dateEnd) : base(userId, title, description, dateCreated)
+        public Task(string userId, string taskId, string title, string description, string category,  DateTime dateEnd) 
+            : base(userId, title, description)
         {
             _taskId = taskId;
             _category = category;
             _dateEnd = dateEnd;
         }
+        public string UserId 
+        { 
+            get { return _userId; } 
+        }
+        public string TaskId 
+        { 
+            get { return _taskId; } 
+        }
+        public string Title 
+        { 
+            get { return _title; }
+            set { _title = value; } 
+        }
+        public string Description 
+        { 
+            get { return _description; }
+            set { _description = value; }
+        }
+        public string Category 
+        { 
+            get { return _category; } 
+            set { _category = value; }
+        }
+        public DateTime DateCreated 
+        { 
+            get { return _dateCreated; } 
+        }
+        public DateTime DateTimeEnd 
+        { 
+            get { return _dateEnd; } 
+            set { _dateEnd = value; }
+        }
 
+        public override bool CreateItem(Item item)
+        {
+            
+            
+            throw new NotImplementedException();
+        }
 
-
-        public string UserId { get { return _userId; } }
-        public string TaskId { get { return _taskId; } }
-        public string Title { get { return _title; } }
-        public string Description { get { return _description; } }
-        public string Category { get { return _category; } }
-        public DateTime DateCreated { get { return _dateCreated; } }
-        public DateTime DateTimeEnd { get { return _dateEnd; } }
+        
     }
 }
+
+
 
 

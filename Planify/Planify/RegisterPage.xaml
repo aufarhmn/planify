@@ -13,23 +13,15 @@
         <TextBlock HorizontalAlignment="Center" Margin="0,103,0,0" TextWrapping="Wrap" Text="Welcome! " VerticalAlignment="Top" FontWeight="Medium" FontSize="16"/>
         <Label Content="Email" HorizontalAlignment="Left" Margin="251,181,0,0" VerticalAlignment="Top"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="251,224,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="368,187,0,0" TextWrapping="Wrap" Text="youremail@example.com" VerticalAlignment="Top" Width="176" RenderTransformOrigin="0.183,-1.058" Height="24" TextChanged="TextBox_TextChanged" SelectionOpacity="1" Opacity="0.7" Padding="4,2,0,0">
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="368,187,0,0" TextWrapping="Wrap" Text="youremail@example.com" VerticalAlignment="Top" Width="176" RenderTransformOrigin="0.183,-1.058" Height="24" TextChanged="TextBox_TextChanged" SelectionOpacity="1" Opacity="0.7" Padding="4,2,0,0">
             <TextBox.Foreground>
-                <SolidColorBrush Color="Black" Opacity="0.7"/>
+                <SolidColorBrush Color="Black" Opacity="1"/>
             </TextBox.Foreground>
             <TextBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.7"/>
             </TextBox.Background>
         </TextBox>
-        <TextBox HorizontalAlignment="Left" Margin="368,226,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="176" RenderTransformOrigin="0.183,-1.058" Height="24" TextChanged="TextBox_TextChanged" SelectionOpacity="1" Opacity="0.7" Padding="4,2,0,0">
-            <TextBox.Foreground>
-                <SolidColorBrush Color="Black" Opacity="0.7"/>
-            </TextBox.Foreground>
-            <TextBox.Background>
-                <SolidColorBrush Color="White" Opacity="0.7"/>
-            </TextBox.Background>
-        </TextBox>
-        <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Center" Margin="0,309,0,0" VerticalAlignment="Top" Height="32" Width="98" FontWeight="SemiBold" Foreground="White" >
+        <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Center" Margin="0,309,0,0" VerticalAlignment="Top" Height="32" Width="98" FontWeight="SemiBold" Foreground="White" Click="btnRegister_Click" >
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -51,22 +43,16 @@
             </Button.Background>
         </Button>
         <Label Content="Confirm Password" HorizontalAlignment="Left" Margin="251,266,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="368,267,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="176" RenderTransformOrigin="0.183,-1.058" Height="24" TextChanged="TextBox_TextChanged" SelectionOpacity="1" Opacity="0.7" Padding="4,2,0,0">
-            <TextBox.Foreground>
-                <SolidColorBrush Color="Black" Opacity="0.7"/>
-            </TextBox.Foreground>
-            <TextBox.Background>
-                <SolidColorBrush Color="White" Opacity="0.7"/>
-            </TextBox.Background>
-        </TextBox>
         <Label Content="Name" HorizontalAlignment="Left" Margin="251,144,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="368,150,0,0" TextWrapping="Wrap" Text="example" VerticalAlignment="Top" Width="176" RenderTransformOrigin="0.183,-1.058" Height="24" TextChanged="TextBox_TextChanged" SelectionOpacity="1" Opacity="0.7" Padding="4,2,0,0">
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="368,150,0,0" TextWrapping="Wrap" Text="example" VerticalAlignment="Top" Width="176" RenderTransformOrigin="0.183,-1.058" Height="24" TextChanged="TextBox_TextChanged" SelectionOpacity="1" Opacity="0.7" Padding="4,2,0,0">
             <TextBox.Foreground>
-                <SolidColorBrush Color="Black" Opacity="0.7"/>
+                <SolidColorBrush Color="Black" Opacity="1"/>
             </TextBox.Foreground>
             <TextBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.7"/>
             </TextBox.Background>
         </TextBox>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Opacity="0.5" Margin="368,226,0,0" VerticalAlignment="Top" Width="176" Height="22" Password="myPassword"/>
+        <PasswordBox x:Name="txtConfirmPassword" HorizontalAlignment="Left" Opacity="0.5" Margin="368,266,0,0" VerticalAlignment="Top" Width="176" Height="22" Password="myPassword"/>
     </Grid>
 </Page>
