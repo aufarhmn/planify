@@ -13,7 +13,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
+
+  
 namespace Planify
 {
     /// <summary>
@@ -21,9 +24,12 @@ namespace Planify
     /// </summary>
     public partial class LoginPage : Page
     {
-
+        
         private NpgsqlConnection conn;
-        string connstring = "Host=20.24.68.238;Port=5432;Username=planify-admin;Password=Planify123Junpro;Database=planify";
+        string connstring = "Host=20.24.68.238;Port=5432;Username=postgres;Password=Planify123Junpro;Database=planify";
+        public static NpgsqlCommand cmd;
+        public string sql;
+        User user = new User();
         public LoginPage()
         {
             conn = new NpgsqlConnection(connstring);
@@ -48,10 +54,46 @@ namespace Planify
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-           
 
-           /* CreateTask newPage = new CreateTask();
-            this.NavigationService.Navigate(newPage);*/
+
+            try
+            {
+                conn.Open();
+                sql = @"select * from user_login(:_name, :_password)";
+                cmd = new NpgsqlCommand(sql, conn);
+                
+                cmd.Parameters.AddWithValue("_name", txtName.Text);
+                cmd.Parameters.AddWithValue("_password", txtPassword.Text);
+
+                if ((int)cmd.ExecuteScalar() != 0)
+                {
+                    
+                   
+                    TasksPage newPage = new TasksPage();
+                    newPage.userId = (int)cmd.ExecuteScalar();
+                    this.NavigationService.Navigate(newPage);
+
+                    conn.Close();
+                    txtName.Text = txtPassword.Text = null;
+
+                    if (this.NavigationService.CanGoBack)
+                    {
+                        this.NavigationService.RemoveBackEntry();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(cmd.ExecuteScalar().ToString(), "Login Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    conn.Close();
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message, "Login Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                conn.Close();
+            }
         }
     }
 }

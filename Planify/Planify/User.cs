@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Planify
 {
-    internal class User
+    public class User
     {
         private string _userId;
         private string _name;
@@ -15,11 +15,13 @@ namespace Planify
         private string _fotoProfil;
 
         public string userId
-        {
+        { 
+            set { _userId = value; }
             get { return _userId; }
         }
         public string name
-        {
+        {   
+            set { _name = value; }
             get { return _name; }
         }
 
@@ -30,6 +32,7 @@ namespace Planify
 
         public string password
         {
+            set { _password = value; }
             get { return _password; }
         }
         public string fotoProfil

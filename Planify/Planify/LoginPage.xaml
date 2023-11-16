@@ -5,15 +5,15 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Planify"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+     
       Title="LoginPage">
 
-    <Grid Background="#FFD9EC9D">
-        <TextBlock HorizontalAlignment="Center" Margin="0,58,0,0" TextWrapping="Wrap" Text="Planify" VerticalAlignment="Top" FontWeight="Bold" FontSize="48"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,136,0,0" TextWrapping="Wrap" Text="Welcome back! " VerticalAlignment="Top" FontWeight="Medium" FontSize="16"/>
-        <Label Content="Email" HorizontalAlignment="Left" Margin="272,190,0,0" VerticalAlignment="Top"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="272,229,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="343,190,0,0" TextWrapping="Wrap" Text="youremail@example.com" VerticalAlignment="Top" Width="176" RenderTransformOrigin="0.183,-1.058" Height="24" TextChanged="TextBox_TextChanged" SelectionOpacity="1" Opacity="0.7" Padding="4,2,0,0">
+    <Grid Background="#FFD9EC9D" Width="900"  Height="450" >
+        <TextBlock HorizontalAlignment="Left" Margin="528,52,0,0" TextWrapping="Wrap" Text="Planify" VerticalAlignment="Top" FontWeight="Bold" FontSize="48"/>
+        <TextBlock HorizontalAlignment="Left" Margin="550,130,0,0" TextWrapping="Wrap" Text="Welcome back! " VerticalAlignment="Top" FontWeight="Medium" FontSize="16"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="478,183,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="478,222,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="550,183,0,0" TextWrapping="Wrap" Text="example" VerticalAlignment="Top" Width="176" RenderTransformOrigin="0.183,-1.058" Height="24" TextChanged="TextBox_TextChanged" SelectionOpacity="1" Opacity="0.7" Padding="4,2,0,0">
             <TextBox.Foreground>
                 <SolidColorBrush Color="Black" Opacity="0.7"/>
             </TextBox.Foreground>
@@ -21,7 +21,7 @@
                 <SolidColorBrush Color="White" Opacity="0.7"/>
             </TextBox.Background>
         </TextBox>
-        <TextBox HorizontalAlignment="Left" Margin="343,229,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="176" RenderTransformOrigin="0.183,-1.058" Height="24" TextChanged="TextBox_TextChanged" SelectionOpacity="1" Opacity="0.7" Padding="4,2,0,0">
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="550,222,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="176" RenderTransformOrigin="0.183,-1.058" Height="24" TextChanged="TextBox_TextChanged" SelectionOpacity="1" Opacity="0.7" Padding="4,2,0,0">
             <TextBox.Foreground>
                 <SolidColorBrush Color="Black" Opacity="0.7"/>
             </TextBox.Foreground>
@@ -29,7 +29,7 @@
                 <SolidColorBrush Color="White" Opacity="0.7"/>
             </TextBox.Background>
         </TextBox>
-        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Center" Margin="0,281,0,0" VerticalAlignment="Top" Height="29" Width="98" FontWeight="SemiBold" Foreground="White" Click="btnLogin_Click" >
+        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="558,275,0,0" VerticalAlignment="Top" Height="29" Width="98" FontWeight="SemiBold" Foreground="White" Click="btnLogin_Click" >
             <Button.Background>
                 <SolidColorBrush Color="Black" Opacity="0.695"/>
             </Button.Background>
@@ -39,8 +39,8 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <TextBlock HorizontalAlignment="Center" Margin="0,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Don't have an account?"/><LineBreak/><Run/></TextBlock>
-        <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Center" Margin="0,376,0,0" VerticalAlignment="Top" Height="27" Width="98" FontWeight="SemiBold" Foreground="White" Click="btnRegister_Click">
+        <TextBlock HorizontalAlignment="Left" Margin="544,349,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Don't have an account?"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Left" Margin="558,370,0,0" VerticalAlignment="Top" Height="27" Width="98" FontWeight="SemiBold" Foreground="White" Click="btnRegister_Click">
             <Button.Background>
                 <SolidColorBrush Color="Black" Opacity="0.695"/>
             </Button.Background>
@@ -50,5 +50,7 @@
                 </Style>
             </Button.Resources>
         </Button>
+        <Border Grid.Row="1" Background="Silver" Width="300" HorizontalAlignment="Left" ></Border>
     </Grid>
+
 </Page>

@@ -48,13 +48,12 @@ namespace Planify
             try
             {
                 conn.Open();
-                sql = @"select * from createUser(:_userid, :_name, :_email, :_password, :_photoprofile)";
+                sql = @"select * from user_register(:_name, :_email, :_password)";
                 cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("_userid", 4);
                 cmd.Parameters.AddWithValue("_name", txtName.Text);
                 cmd.Parameters.AddWithValue("_email", txtEmail.Text);
                 cmd.Parameters.AddWithValue("_password", txtPassword.Password);
-                cmd.Parameters.AddWithValue("_photoprofile", "jokowi");
+                
                 if((int)cmd.ExecuteScalar() == 1)
                 {
                     MessageBox.Show("Successfully Registered", "Well Done", MessageBoxButton.OK, MessageBoxImage.Information);

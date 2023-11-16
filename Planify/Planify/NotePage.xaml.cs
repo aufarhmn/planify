@@ -24,5 +24,10 @@ namespace Planify
         {
             InitializeComponent();
         }
+
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
