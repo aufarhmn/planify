@@ -3,6 +3,7 @@ using System;
 using System.Data;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Xml.Linq;
 
 namespace Planify
@@ -20,16 +21,21 @@ namespace Planify
         private DataGrid r;
         public int userId;
         public int taskId;
+        public DateTime taskCreate;
+
       
 
 
 
         public TasksPage()
         {
+            
             conn = new NpgsqlConnection(connstring);
             InitializeComponent();
             datePickerDeadline.DisplayDateStart = DateTime.Now;
-           
+            NavigationCommands.BrowseBack.InputGestures.Clear();
+            NavigationCommands.BrowseForward.InputGestures.Clear();
+
         }
 
         public void btnLoad_Click(object sender, RoutedEventArgs e)
@@ -57,12 +63,12 @@ namespace Planify
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error" + ex.Message, "Login Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Error" + ex.Message, "Mendapatkan task Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
                 conn.Close();
             }
 
         }
-        public void Button_Click(object sender,RoutedEventArgs e) { }
+       
 
         public void btnCreate_Click(object sender, RoutedEventArgs e)
         {
@@ -90,14 +96,14 @@ namespace Planify
                 }
                 else
                 {
-                    MessageBox.Show("Error", "Login Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Error", "Create Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
                     conn.Close();
                 }
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error" + ex.Message, "Login Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Error" + ex.Message, "Create Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
                 conn.Close();
             }
         }
@@ -111,6 +117,7 @@ namespace Planify
         {
            
         }
+       
 
         private void dgTask_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -136,6 +143,19 @@ namespace Planify
                     {
                         datePickerDeadline.SelectedDate = DateTime.Now;
                     }
+
+                    if (DateTime.TryParse(row["_taskcreatedate"].ToString(), out DateTime taskcreatedate))
+                    {
+                        taskCreate = taskcreatedate;
+                    }
+                    else
+                    {
+                        taskCreate = DateTime.Now;
+                    }
+
+
+
+
                     bool isTaskDone = Convert.ToBoolean(row["_taskisdone"]);
 
                     if (isTaskDone)
@@ -167,10 +187,70 @@ namespace Planify
             }
             else
             {
-                MessageBox.Show("Error", "Login Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Error gagal menghapus task", "Menghapus Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
                 conn.Close();
             }
 
+        }
+
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                sql = @"select * from task_update(:_taskid, :_taskname, :_taskdescription, :_taskcreatedate, :_taskdeadline, :_taskisdone)";
+                cmd = new NpgsqlCommand(sql, conn);
+
+                cmd.Parameters.Add(new NpgsqlParameter("_taskid", NpgsqlTypes.NpgsqlDbType.Integer)).Value = taskId;
+                cmd.Parameters.AddWithValue("_taskname", tbTitle.Text);
+                cmd.Parameters.AddWithValue("_taskdescription", tbDesc.Text);
+                cmd.Parameters.Add(new NpgsqlParameter("_taskcreatedate", NpgsqlTypes.NpgsqlDbType.Date)).Value = taskCreate;
+                cmd.Parameters.Add(new NpgsqlParameter("_taskdeadline", NpgsqlTypes.NpgsqlDbType.Date)).Value = datePickerDeadline.SelectedDate;
+                if(rbDone.IsChecked == false && rbOngoing.IsChecked == false)
+                {
+                    MessageBox.Show("Silahkan mengisi status task", "Gagal update Task", MessageBoxButton.OK, MessageBoxImage.Information);
+                    conn.Close();
+                }
+
+                cmd.Parameters.Add(new NpgsqlParameter("_taskisdone", NpgsqlTypes.NpgsqlDbType.Boolean)).Value = rbDone.IsChecked;
+
+
+
+
+                if ((int)cmd.ExecuteScalar() == 1)
+                {
+                    MessageBox.Show("Berhasil mengupdate task", "Sukses mengupdate Task", MessageBoxButton.OK, MessageBoxImage.Information);
+                    conn.Close();
+                    btnLoad_Click(btnLoad, null);
+
+                }
+                else
+                {
+                    MessageBox.Show("Error gagal mengupdate task", "Update Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    conn.Close();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message, "Mengupdate task Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                conn.Close();
+            }
+        }
+
+        
+
+        private void btnNote_Click(object sender, RoutedEventArgs e)
+        {
+            NotesPage newPage = new NotesPage();
+            newPage.userId = userId;
+            this.NavigationService.Navigate(newPage);
+        }
+
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            LoginPage newPage = new LoginPage();
+            this.NavigationService.Navigate(newPage);
         }
     }
 }

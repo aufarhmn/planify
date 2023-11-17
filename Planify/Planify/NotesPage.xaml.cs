@@ -64,7 +64,7 @@ namespace Planify
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error" + ex.Message, "Login Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Error" + ex.Message, "Mendapatkan note Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
                 conn.Close();
             }
         }
@@ -74,7 +74,7 @@ namespace Planify
             try
             {
                 conn.Open();
-                sql = @"select * from create_notes(:_categoryname, :_userid, :_notename, :_notedescription, :_notecreatedate)";
+                sql = @"select * from create_notes(:_categoryname, :_userid, :_notename, :_notedescription, :_noteisfavorite)";
                 cmd = new NpgsqlCommand(sql, conn);
 
 
@@ -82,48 +82,39 @@ namespace Planify
                 cmd.Parameters.Add(new NpgsqlParameter("_userid", NpgsqlTypes.NpgsqlDbType.Integer)).Value = userId;
                 cmd.Parameters.AddWithValue("_notename", tbTitle.Text);
                 cmd.Parameters.AddWithValue("_notedescription", tbDesc.Text);
-                cmd.Parameters.Add(new NpgsqlParameter("_notecreatedate", NpgsqlTypes.NpgsqlDbType.Date)).Value = DateTime.Now;
+                
+
+                if (rbYes.IsChecked == false && rbNo.IsChecked == false)
+                {
+                    MessageBox.Show("Silahkan pilih nilai favorite", "Gagal membuat Note", MessageBoxButton.OK, MessageBoxImage.Information);
+                    conn.Close();
+                }
+
+                cmd.Parameters.Add(new NpgsqlParameter("_noteisfavorite", NpgsqlTypes.NpgsqlDbType.Boolean)).Value = rbYes.IsChecked;
+
 
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
-                    MessageBox.Show("Berhasil membuat note", "Sukses membuat Bite", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Berhasil membuat note", "Sukses membuat Note", MessageBoxButton.OK, MessageBoxImage.Information);
                     conn.Close();
                     btnLoad_Click(btnLoad, null);
 
                 }
                 else
                 {
-                    MessageBox.Show("Error", "Login Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Error Gagal membuat note", "Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
                     conn.Close();
                 }
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error" + ex.Message, "Login Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Error" + ex.Message, "Membuat note Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
                 conn.Close();
             }
         }
 
-        private void dgNote_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (dgNote.SelectedItem != null)
-            {
-                DataRowView row = dgNote.SelectedItem as DataRowView;
-                if (row != null)
-                {
-
-
-                    // Use the correct column names based on the output
-                    // Replace "taskname" and "taskdescription" with the correct column names
-                    tbTitle.Text = row["_notename"].ToString();
-                    tbDesc.Text = row["_notedescription"].ToString();
-                    tbCategory.Text = row["_categoryname"].ToString();
-                    noteId = (int)row["_noteid"];
-                    // Update other text boxes as needed for different columns
-                }
-            }
-        }
+        
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
@@ -140,11 +131,104 @@ namespace Planify
                 }
                 else
                 {
-                    MessageBox.Show("Error", "Login Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Error gagal menghapus note", "Menghapus Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
                     conn.Close();
                 }
 
             }
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (dgNote.SelectedItem != null)
+            {
+                DataRowView row = dgNote.SelectedItem as DataRowView;
+                if (row != null)
+                {
+
+
+                    // Use the correct column names based on the output
+                    // Replace "taskname" and "taskdescription" with the correct column names
+                    tbTitle.Text = row["_notename"].ToString();
+                    tbDesc.Text = row["_notedescription"].ToString();
+                    tbCategory.Text = row["_categoryname"].ToString();
+                    bool isFavorite = Convert.ToBoolean(row["_noteisfavorite"]);
+
+                    if (isFavorite)
+                    {
+                        rbYes.IsChecked = true;
+
+                    }
+                    else
+                    {
+
+                        rbNo.IsChecked = true;
+                    }
+                    noteId = (int)row["_noteid"];
+                    // Update other text boxes as needed for different columns
+                }
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnTask_Click(object sender, RoutedEventArgs e)
+        {
+            TasksPage newPage = new TasksPage();
+            newPage.userId = userId;
+            this.NavigationService.Navigate(newPage);
+        }
+
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                sql = @"select * from note_update(:_noteid, :_notename, :_notedescription, :_noteisfavorite)";
+                cmd = new NpgsqlCommand(sql, conn);
+
+                cmd.Parameters.Add(new NpgsqlParameter("_noteid", NpgsqlTypes.NpgsqlDbType.Integer)).Value = noteId;
+                cmd.Parameters.AddWithValue("_notename", tbTitle.Text);
+                cmd.Parameters.AddWithValue("_notedescription", tbDesc.Text);
+
+
+                if (rbYes.IsChecked == false && rbNo.IsChecked == false)
+                {
+                    MessageBox.Show("Silahkan pilih nilai favorite", "Gagal mengupdate Note", MessageBoxButton.OK, MessageBoxImage.Information);
+                    conn.Close();
+                }
+
+                cmd.Parameters.Add(new NpgsqlParameter("_noteisfavorite", NpgsqlTypes.NpgsqlDbType.Boolean)).Value = rbYes.IsChecked;
+
+
+                if ((int)cmd.ExecuteScalar() == 1)
+                {
+                    MessageBox.Show("Berhasil mengupdate note", "Sukses mengupdate Note", MessageBoxButton.OK, MessageBoxImage.Information);
+                    conn.Close();
+                    btnLoad_Click(btnLoad, null);
+
+                }
+                else
+                {
+                    MessageBox.Show("Error gagal mengupdate note", "Mengupdate note Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    conn.Close();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message, "Mengupdate note Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                conn.Close();
+            }
+        }
+
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            LoginPage newPage = new LoginPage();
+            this.NavigationService.Navigate(newPage);
         }
     }
 }

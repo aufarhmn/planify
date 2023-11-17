@@ -34,6 +34,8 @@ namespace Planify
         {
             conn = new NpgsqlConnection(connstring);
             InitializeComponent();
+            NavigationCommands.BrowseBack.InputGestures.Clear();
+            NavigationCommands.BrowseForward.InputGestures.Clear();
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -52,6 +54,7 @@ namespace Planify
             this.NavigationService.Navigate(newPage);
         }
 
+       
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
 
@@ -63,7 +66,7 @@ namespace Planify
                 cmd = new NpgsqlCommand(sql, conn);
                 
                 cmd.Parameters.AddWithValue("_name", txtName.Text);
-                cmd.Parameters.AddWithValue("_password", txtPassword.Text);
+                cmd.Parameters.AddWithValue("_password", txtPassword.Password);
 
                 if ((int)cmd.ExecuteScalar() != 0)
                 {
@@ -74,7 +77,7 @@ namespace Planify
                     this.NavigationService.Navigate(newPage);
 
                     conn.Close();
-                    txtName.Text = txtPassword.Text = null;
+                    txtName.Text = txtPassword.Password = null;
 
                     if (this.NavigationService.CanGoBack)
                     {
@@ -83,7 +86,7 @@ namespace Planify
                 }
                 else
                 {
-                    MessageBox.Show(cmd.ExecuteScalar().ToString(), "Login Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Username atau Password salah", "Login Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
                     conn.Close();
                 }
 

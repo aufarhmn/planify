@@ -3,14 +3,16 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:Icon ="http://metro.mahapps.com/winfx/xaml/iconpacks"
       xmlns:local="clr-namespace:Planify"
+      ShowsNavigationUI="False"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+     
       Title="NotesPage">
 
-    <Grid Background="#FFD9EC9D">
-        <DataGrid x:Name="dgNote" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,18,376,122" SelectionChanged="DataGrid_SelectionChanged"/>
-        <Button x:Name="btnLoad" Content="Load" HorizontalAlignment="Left" Margin="10,346,0,0" VerticalAlignment="Top" Height="33" Width="195" FontSize="16" BorderBrush="{x:Null}" Background="#FF7BE816" FontWeight="Bold" Click="btnLoad_Click">
+    <Grid Background="#FFD9EC9D" Height="450" Width="900">
+        <DataGrid x:Name="dgNote" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="126,20,353,120" SelectionChanged="DataGrid_SelectionChanged"/>
+        <Button x:Name="btnLoad" Content="Load" HorizontalAlignment="Left" Margin="133,341,0,0" VerticalAlignment="Top" Height="33" Width="195" FontSize="16" BorderBrush="{x:Null}" Background="#FF7BE816" FontWeight="Bold" Click="btnLoad_Click">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="{TemplateBinding Background}" CornerRadius="10">
@@ -20,12 +22,12 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label x:Name="lblTitle" Content="Title:" HorizontalAlignment="Left" Margin="447,10,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <TextBox x:Name="tbTitle" HorizontalAlignment="Left" Margin="453,41,0,0" TextWrapping="Wrap" Text="Judul Note" VerticalAlignment="Top" Width="337" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
-        <Label x:Name="lblDesc" Content="Description:" HorizontalAlignment="Left" Margin="449,127,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <TextBox x:Name="tbDesc" HorizontalAlignment="Left" Margin="453,159,0,0" TextWrapping="Wrap" Text="sdf sf sf sd sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sd fsd fsf " VerticalAlignment="Top" Width="337" Height="270" FontSize="14
+        <Label x:Name="lblTitle" Content="Title:" HorizontalAlignment="Left" Margin="547,16,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="tbTitle" HorizontalAlignment="Left" Margin="553,47,0,0" TextWrapping="Wrap" Text="Judul Note" VerticalAlignment="Top" Width="337" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
+        <Label x:Name="lblDesc" Content="Description:" HorizontalAlignment="Left" Margin="549,196,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="tbDesc" HorizontalAlignment="Left" Margin="553,225,0,0" TextWrapping="Wrap" Text="sdf sf sf sd sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sd fsd fsf " VerticalAlignment="Top" Width="337" Height="210" FontSize="14
                  " BorderBrush="{x:Null}"/>
-        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="229,346,0,0" VerticalAlignment="Top" Height="33" Width="195" FontSize="16" BorderBrush="{x:Null}" Background="#FFE81616" FontWeight="Bold" Foreground="White" Click="btnDelete_Click">
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Center" Margin="0,341,0,0" VerticalAlignment="Top" Height="33" Width="195" FontSize="16" BorderBrush="{x:Null}" Background="#FFE81616" FontWeight="Bold" Foreground="White" Click="btnDelete_Click">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="{TemplateBinding Background}" CornerRadius="10">
@@ -35,7 +37,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="btnCreate" Content="Create Note" HorizontalAlignment="Left" Margin="10,394,0,0" VerticalAlignment="Top" Height="33" Width="195" FontSize="16" BorderBrush="{x:Null}" Background="#FF1667E8" FontWeight="Bold" Foreground="White" Click="btnCreate_Click">
+        <Button x:Name="btnCreate" Content="Create Note" HorizontalAlignment="Left" Margin="133,389,0,0" VerticalAlignment="Top" Height="33" Width="195" FontSize="16" BorderBrush="{x:Null}" Background="#FF1667E8" FontWeight="Bold" Foreground="White" Click="btnCreate_Click">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="{TemplateBinding Background}" CornerRadius="10">
@@ -45,7 +47,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="229,394,0,0" VerticalAlignment="Top" Height="33" Width="195" FontSize="16" BorderBrush="{x:Null}" Background="#FF1095A0" FontWeight="Bold" Foreground="White">
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Center" Margin="0,389,0,0" VerticalAlignment="Top" Height="33" Width="195" FontSize="16" BorderBrush="{x:Null}" Background="#FF1095A0" FontWeight="Bold" Foreground="White" Click="btnUpdate_Click">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="{TemplateBinding Background}" CornerRadius="10">
@@ -55,7 +57,38 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label x:Name="lblTitle_Copy" Content="Category:" HorizontalAlignment="Left" Margin="447,68,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <TextBox x:Name="tbCategory" HorizontalAlignment="Left" Margin="453,99,0,0" TextWrapping="Wrap" Text="Isi Kategori" VerticalAlignment="Top" Width="337" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
+        <Border Grid.Row="1" Background="#7e5fdc" Width="120" HorizontalAlignment="Left">
+            <DockPanel>
+                <StackPanel DockPanel.Dock="Top">
+                    <Button x:Name="btnTask" Style="{StaticResource taskButton}" Margin="10 20 10 10" Click="btnTask_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Icon:PackIconMaterial Kind="FileDocument" Style="{StaticResource taskButtonIcon}"/>
+                            <TextBlock Text="Task"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Style="{StaticResource taskButton}" Click="Button_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Icon:PackIconMaterial Kind="Notebook" Style="{StaticResource taskButtonIcon}"/>
+                            <TextBlock Text="Note"/>
+                        </StackPanel>
+                    </Button>
+
+
+                </StackPanel>
+                <Button x:Name="btnLogout" Style="{StaticResource taskButton}" VerticalAlignment="Bottom" DockPanel.Dock="Bottom" Margin="10 0 15 20" Click="btnLogout_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Icon:PackIconMaterial Kind="Logout" Style="{StaticResource taskButtonIcon}"/>
+                        <TextBlock Text="Logout"/>
+                    </StackPanel>
+                </Button>
+            </DockPanel>
+
+        </Border>
+        <Label x:Name="lblTitle_Copy" Content="Category:" HorizontalAlignment="Left" Margin="547,74,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="tbCategory" HorizontalAlignment="Left" Margin="553,105,0,0" TextWrapping="Wrap" Text="Isi Kategori" VerticalAlignment="Top" Width="337" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
+        <Label x:Name="lblDesc_Copy" Content="Favorite:" HorizontalAlignment="Left" Margin="549,130,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <RadioButton x:Name="rbYes" Content="Yes" HorizontalAlignment="Left" Margin="553,173,0,0" VerticalAlignment="Top" FontSize="14" />
+        <RadioButton x:Name="rbNo" Content="No" HorizontalAlignment="Left" Margin="629,173,0,0" VerticalAlignment="Top" FontSize="14" />
     </Grid>
 </Page>

@@ -5,6 +5,8 @@
              xmlns:local="clr-namespace:Planify"
              StartupUri="LoginPage.xaml">
     <Application.Resources>
+
+        
         
         <Style x:Key="taskButton" TargetType="Button">
             <Setter Property="Background" Value="Transparent"/>
@@ -38,6 +40,10 @@
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="Margin" Value="15 2 20 0"/>
         </Style>
+        
+       
+            <BitmapImage x:Key="logo" UriSource="assets\Logo.png"></BitmapImage>
+        
         
         
     </Application.Resources>

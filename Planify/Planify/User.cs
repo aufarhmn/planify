@@ -8,13 +8,13 @@ namespace Planify
 {
     public class User
     {
-        private string _userId;
+        private int _userId;
         private string _name;
         private string _email;
         private string _password;
         private string _fotoProfil;
 
-        public string userId
+        public int userId
         { 
             set { _userId = value; }
             get { return _userId; }
@@ -27,6 +27,7 @@ namespace Planify
 
         public string email
         {
+            set { _email = value; }
             get { return _email; }
         }
 

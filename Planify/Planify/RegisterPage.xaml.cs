@@ -47,18 +47,34 @@ namespace Planify
         {
             try
             {
+                
                 conn.Open();
                 sql = @"select * from user_register(:_name, :_email, :_password)";
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_name", txtName.Text);
                 cmd.Parameters.AddWithValue("_email", txtEmail.Text);
                 cmd.Parameters.AddWithValue("_password", txtPassword.Password);
-                
-                if((int)cmd.ExecuteScalar() == 1)
+
+
+                if (txtName.Text.Length == 0 || txtEmail.Text.Length == 0 || txtPassword.Password.Length == 0)
+                {
+                    MessageBox.Show("Pastikan isi semua field", "Register Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    conn.Close();
+                }
+                else if (txtPassword.Password != txtConfirmPassword.Password)
+                {
+                    MessageBox.Show("Password tidak sama", "Register Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    conn.Close();
+                } else if ((int)cmd.ExecuteScalar() == 1)
                 {
                     MessageBox.Show("Successfully Registered", "Well Done", MessageBoxButton.OK, MessageBoxImage.Information);
                     conn.Close();
                     txtEmail.Text = txtName.Text = txtPassword.Password = txtConfirmPassword.Password = null;
+                }
+                else
+                {
+                    MessageBox.Show("Gagal Register, bisa saja username exist", "Register Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    conn.Close();
                 }
 
 
