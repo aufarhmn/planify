@@ -23,9 +23,9 @@
             </Button.Template>
         </Button>
         <Label x:Name="lblTitle" Content="Title:" HorizontalAlignment="Left" Margin="587,11,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="56"/>
-        <TextBox x:Name="tbTitle" HorizontalAlignment="Left" Margin="585,42,0,0" TextWrapping="Wrap" Text="Judul Note" VerticalAlignment="Top" Width="305" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="tbTitle" HorizontalAlignment="Left" Margin="585,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="305" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
         <Label x:Name="lblDesc" Content="Description:" HorizontalAlignment="Left" Margin="587,251,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="112" Height="33"/>
-        <TextBox x:Name="tbDesc" HorizontalAlignment="Left" Margin="585,284,0,0" TextWrapping="Wrap" Text="sdf sf sf sd sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sd fsd fsf " VerticalAlignment="Top" Width="308" Height="150" FontSize="14                  " BorderBrush="{x:Null}"/>
+        <TextBox x:Name="tbDesc" HorizontalAlignment="Left" Margin="585,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="308" Height="150" FontSize="14                  " BorderBrush="{x:Null}"/>
         <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="380,353,0,0" VerticalAlignment="Top" Height="33" Width="196" FontSize="16" BorderBrush="{x:Null}" Background="#FFE81616" FontWeight="Bold" Foreground="White" Click="btnDelete_Click">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -85,7 +85,7 @@
 
         </Border>
         <Label x:Name="lblTitle_Copy" Content="Category:" HorizontalAlignment="Left" Margin="587,70,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="99"/>
-        <TextBox x:Name="tbCategory" HorizontalAlignment="Left" Margin="588,101,0,0" TextWrapping="Wrap" Text="Judul Note" VerticalAlignment="Top" Width="305" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="tbCategory" HorizontalAlignment="Left" Margin="588,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="305" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
         <DatePicker x:Name="datePickerDeadline" HorizontalAlignment="Left" Margin="588,163,0,0" VerticalAlignment="Top" />
         <Label x:Name="lblTitle_Copy1" Content="Deadline:" HorizontalAlignment="Left" Margin="587,131,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="99"/>
         <Label x:Name="lblTitle_Copy2" Content="Status:" HorizontalAlignment="Left" Margin="587,195,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="99"/>

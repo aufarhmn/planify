@@ -23,9 +23,9 @@
             </Button.Template>
         </Button>
         <Label x:Name="lblTitle" Content="Title:" HorizontalAlignment="Left" Margin="547,16,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <TextBox x:Name="tbTitle" HorizontalAlignment="Left" Margin="553,47,0,0" TextWrapping="Wrap" Text="Judul Note" VerticalAlignment="Top" Width="337" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="tbTitle" HorizontalAlignment="Left" Margin="553,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="337" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
         <Label x:Name="lblDesc" Content="Description:" HorizontalAlignment="Left" Margin="549,196,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <TextBox x:Name="tbDesc" HorizontalAlignment="Left" Margin="553,225,0,0" TextWrapping="Wrap" Text="sdf sf sf sd sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sdf sd fsd fsf " VerticalAlignment="Top" Width="337" Height="210" FontSize="14
+        <TextBox x:Name="tbDesc" HorizontalAlignment="Left" Margin="553,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="337" Height="210" FontSize="14
                  " BorderBrush="{x:Null}"/>
         <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Center" Margin="0,341,0,0" VerticalAlignment="Top" Height="33" Width="195" FontSize="16" BorderBrush="{x:Null}" Background="#FFE81616" FontWeight="Bold" Foreground="White" Click="btnDelete_Click">
             <Button.Template>
@@ -86,7 +86,7 @@
 
         </Border>
         <Label x:Name="lblTitle_Copy" Content="Category:" HorizontalAlignment="Left" Margin="547,74,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <TextBox x:Name="tbCategory" HorizontalAlignment="Left" Margin="553,105,0,0" TextWrapping="Wrap" Text="Isi Kategori" VerticalAlignment="Top" Width="337" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="tbCategory" HorizontalAlignment="Left" Margin="553,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="337" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
         <Label x:Name="lblDesc_Copy" Content="Favorite:" HorizontalAlignment="Left" Margin="549,130,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
         <RadioButton x:Name="rbYes" Content="Yes" HorizontalAlignment="Left" Margin="553,173,0,0" VerticalAlignment="Top" FontSize="14" />
         <RadioButton x:Name="rbNo" Content="No" HorizontalAlignment="Left" Margin="629,173,0,0" VerticalAlignment="Top" FontSize="14" />
