@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Planify
 {
-    internal class Task : Item
+    public class Task : Item
     {
         private string _taskId;
         private string _category;
+        private bool _taskIsDone;
         private DateTime _dateEnd;
 
         public Task(string userId, string taskId, string title, string description, string category,  DateTime dateEnd) 
@@ -27,6 +28,8 @@ namespace Planify
         { 
             get { return _taskId; } 
         }
+
+        
         public string Title 
         { 
             get { return _title; }
@@ -44,6 +47,7 @@ namespace Planify
         }
         public DateTime DateCreated 
         { 
+            set { _dateCreated = value; }
             get { return _dateCreated; } 
         }
         public DateTime DateTimeEnd 

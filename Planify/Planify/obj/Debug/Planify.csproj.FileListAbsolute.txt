@@ -1,318 +1,183 @@
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\Planify.exe.config
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\Planify.exe
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\Planify.pdb
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\Planify.csproj.AssemblyReference.cache
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\Planify.csproj.SuggestedBindingRedirects.cache
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\LoginPage.g.cs
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\MainWindow.g.cs
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\RegisterPage.g.cs
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\App.g.cs
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\Planify_MarkupCompile.cache
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\Planify_MarkupCompile.lref
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\LoginPage.baml
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\MainWindow.baml
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\RegisterPage.baml
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\Planify.g.resources
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\Planify.Properties.Resources.resources
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\Planify.csproj.GenerateResource.cache
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\Planify.csproj.CoreCompileInputs.cache
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\Planify.exe
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\Planify.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\Planify.csproj.AssemblyReference.cache
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\Planify.csproj.SuggestedBindingRedirects.cache
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\CreateTask.g.cs
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\LoginPage.g.cs
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\MainWindow.g.cs
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\RegisterPage.g.cs
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\App.g.cs
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\Planify_MarkupCompile.cache
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\Planify_MarkupCompile.lref
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\Planify.exe
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\Planify.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\Planify.exe.config
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\Planify.exe
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\Planify.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\CreateTask.baml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\LoginPage.baml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\MainWindow.baml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\RegisterPage.baml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\Planify.g.resources
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\Planify.Properties.Resources.resources
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\Planify.csproj.GenerateResource.cache
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\Planify.csproj.CoreCompileInputs.cache
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\Microsoft.Bcl.HashCode.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\Npgsql.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Buffers.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Collections.Immutable.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Diagnostics.DiagnosticSource.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Memory.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Numerics.Vectors.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Text.Encodings.Web.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Text.Json.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Threading.Channels.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.ValueTuple.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\Microsoft.Bcl.HashCode.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\Npgsql.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Buffers.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Collections.Immutable.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Diagnostics.DiagnosticSource.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Memory.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Numerics.Vectors.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Text.Encodings.Web.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Text.Json.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Threading.Channels.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\System.ValueTuple.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\Planify.csproj.CopyComplete
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\NotePage.g.cs
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\NotesPage.g.cs
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\TasksPage.g.cs
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Codicons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Coolicons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Core.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Entypo.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FileIcons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontisto.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Ionicons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.JamIcons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Material.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Microns.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Modern.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Octicons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Typicons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Unicons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Zondicons.dll
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Codicons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Codicons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Coolicons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Coolicons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Core.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Entypo.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Entypo.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FileIcons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FileIcons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontisto.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontisto.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Ionicons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Ionicons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.JamIcons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.JamIcons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Material.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Microns.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Microns.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Modern.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Modern.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Octicons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Octicons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Typicons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Typicons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Unicons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Unicons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Zondicons.pdb
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Zondicons.xml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\App.baml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\NotePage.baml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\NotesPage.baml
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\TasksPage.baml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Codicons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Coolicons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Core.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Entypo.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FileIcons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontisto.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Ionicons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.JamIcons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Material.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Microns.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Modern.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Octicons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Typicons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Unicons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Zondicons.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\Microsoft.Bcl.HashCode.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\Npgsql.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Buffers.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Collections.Immutable.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Diagnostics.DiagnosticSource.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Memory.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Numerics.Vectors.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Text.Encodings.Web.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Text.Json.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Threading.Channels.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Threading.Tasks.Extensions.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.ValueTuple.dll
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Codicons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Codicons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Coolicons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Coolicons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Core.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Entypo.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Entypo.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FileIcons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FileIcons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontisto.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontisto.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Ionicons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Ionicons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.JamIcons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.JamIcons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Material.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Microns.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Microns.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Modern.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Modern.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Octicons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Octicons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Typicons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Typicons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Unicons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Unicons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Zondicons.pdb
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Zondicons.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\Microsoft.Bcl.HashCode.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\Npgsql.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Buffers.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Collections.Immutable.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Diagnostics.DiagnosticSource.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Memory.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Numerics.Vectors.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Text.Encodings.Web.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Text.Json.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Threading.Channels.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.Threading.Tasks.Extensions.xml
-E:\Junior-Project\planify\Planify\Planify\bin\Debug\System.ValueTuple.xml
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\CreateTask.g.cs
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\NotePage.g.cs
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\NotesPage.g.cs
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\TasksPage.g.cs
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\App.baml
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\CreateTask.baml
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\NotePage.baml
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\NotesPage.baml
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\TasksPage.baml
-E:\Junior-Project\planify\Planify\Planify\obj\Debug\Planify.csproj.CopyComplete
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Planify.exe.config
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Planify.exe.manifest
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Planify.application
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Planify.exe
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Planify.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Codicons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Coolicons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Entypo.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FileIcons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontisto.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Ionicons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.JamIcons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Microns.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Modern.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Octicons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Typicons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Unicons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Zondicons.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MaterialDesignColors.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Npgsql.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Buffers.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Collections.Immutable.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Memory.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Numerics.Vectors.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Text.Encodings.Web.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Text.Json.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Threading.Channels.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.ValueTuple.dll
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Codicons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Codicons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Coolicons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Coolicons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Entypo.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Entypo.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FileIcons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FileIcons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontisto.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Fontisto.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Ionicons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Ionicons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.JamIcons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.JamIcons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Microns.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Microns.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Modern.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Modern.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Octicons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Octicons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Typicons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Typicons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Unicons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Unicons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Zondicons.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MahApps.Metro.IconPacks.Zondicons.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MaterialDesignColors.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\Npgsql.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Buffers.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Collections.Immutable.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Memory.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Numerics.Vectors.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Text.Encodings.Web.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Text.Json.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Threading.Channels.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\bin\Debug\System.ValueTuple.xml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\Planify.csproj.AssemblyReference.cache
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\Planify.csproj.SuggestedBindingRedirects.cache
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\AddTask.g.cs
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\CreateTask.g.cs
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\EditTask.g.cs
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\LoginPage.g.cs
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\MainWindow.g.cs
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\NotePage.g.cs
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\NotesPage.g.cs
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\RegisterPage.g.cs
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\SeeTask.g.cs
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\TasksPage.g.cs
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\App.g.cs
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\Planify_MarkupCompile.cache
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\Planify_MarkupCompile.lref
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\App.baml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\AddTask.baml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\CreateTask.baml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\EditTask.baml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\LoginPage.baml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\MainWindow.baml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\NotePage.baml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\NotesPage.baml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\RegisterPage.baml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\SeeTask.baml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\TasksPage.baml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\Planify.g.resources
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\Planify.Properties.Resources.resources
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\Planify.csproj.GenerateResource.cache
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\Planify.csproj.CoreCompileInputs.cache
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\Planify.exe.manifest
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\Planify.application
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\Planify.csproj.CopyComplete
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\Planify.exe
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\Planify.pdb
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\CreateNote.g.cs
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\CreateNote.baml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\EditNote.g.cs
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\SeeNote.g.cs
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\EditNote.baml
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\SeeNote.baml

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Planify
 {
-    internal abstract class Item
+    public abstract class Item
     {
         protected string _userId;
         protected string _title;

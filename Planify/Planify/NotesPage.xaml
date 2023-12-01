@@ -10,9 +10,73 @@
      
       Title="NotesPage">
 
-    <Grid Background="#FFD9EC9D" Height="450" Width="900">
-        <DataGrid x:Name="dgNote" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="126,20,353,120" SelectionChanged="DataGrid_SelectionChanged"/>
-        <Button x:Name="btnLoad" Content="Load" HorizontalAlignment="Left" Margin="133,341,0,0" VerticalAlignment="Top" Height="33" Width="195" FontSize="16" BorderBrush="{x:Null}" Background="#FF7BE816" FontWeight="Bold" Click="btnLoad_Click">
+    <Grid Background="#f2f2f2" Height="450" Width="960">
+
+        <TextBlock Text="List Note" FontSize="32" FontWeight="SemiBold" Margin="139,28,0,376" Foreground="#121518" HorizontalAlignment="Left" RenderTransformOrigin="0.873,0.6"/>
+        <Button Style="{StaticResource addButton}" Margin="0,38,40,377" Width="106"  Click="btnCreate_Click">
+            <StackPanel Orientation="Horizontal">
+                <Icon:PackIconMaterial Kind="Plus" VerticalAlignment="Center" Margin="0 1 8 0" Width="11" Height="11"/>
+                <TextBlock Text="Add Note"/>
+            </StackPanel>
+        </Button>
+        <DataGrid Style="{DynamicResource DataGridStyle1}" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" RowStyle="{DynamicResource DataGridRowStyle1}" x:Name="dgNote" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="139,109,40,31" SelectionChanged="DataGrid_SelectionChanged">
+            <DataGrid.Columns>
+
+
+                <DataGridTemplateColumn Header="Favorite" Width="80">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Icon:PackIconMaterial>
+                                    <Icon:PackIconMaterial.Style>
+                                        <Style TargetType="Icon:PackIconMaterial">
+                                            <Setter Property="Kind" Value="CloseCircleOutline"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding NoteIsFavorite}" Value="True">
+                                                    <Setter Property="Kind" Value="CheckCircleOutline"/>
+                                                    <Setter Property="Foreground" Value="Blue"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding NoteIsFavorite}" Value="False">
+                                                    <Setter Property="Kind" Value="CloseCircleOutline"/>
+                                                    <Setter Property="Foreground" Value="Red"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Icon:PackIconMaterial.Style>
+                                </Icon:PackIconMaterial>
+                            </ContentControl>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+
+
+
+
+
+                <DataGridTextColumn Header="Title" Binding="{Binding NoteTitle}" IsReadOnly="True" Width="100"/>
+                <DataGridTextColumn Header="Category" Binding="{Binding NoteCategory}" IsReadOnly="True" Width="100"/>
+                <DataGridTextColumn Header="Description" Binding="{Binding NoteDescription}" IsReadOnly="True" Width="*"/>
+
+
+                <DataGridTemplateColumn Header="Operations" IsReadOnly="True" Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Style="{StaticResource gridEditButton}" Click="btnUpdate_Click">
+                                    <Icon:PackIconMaterial Kind="PencilOutline" Style="{StaticResource gridButtonIcon}"/>
+                                </Button>
+                                <Button Margin="5 0 0 0" Style="{StaticResource gridRemoveButton}" Click="btnDelete_Click">
+                                    <Icon:PackIconMaterial Kind="DeleteOutline" Style="{StaticResource gridButtonIcon}"/>
+                                </Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnLoad" Content="Load" Visibility="Collapsed" HorizontalAlignment="Left" Margin="295,404,0,0" VerticalAlignment="Top" Height="33" Width="195" FontSize="16" BorderBrush="{x:Null}" Background="#FF7BE816" FontWeight="Bold" Click="btnLoad_Click">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="{TemplateBinding Background}" CornerRadius="10">
@@ -22,55 +86,26 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label x:Name="lblTitle" Content="Title:" HorizontalAlignment="Left" Margin="547,16,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <TextBox x:Name="tbTitle" HorizontalAlignment="Left" Margin="553,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="337" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
-        <Label x:Name="lblDesc" Content="Description:" HorizontalAlignment="Left" Margin="549,196,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <TextBox x:Name="tbDesc" HorizontalAlignment="Left" Margin="553,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="337" Height="210" FontSize="14
-                 " BorderBrush="{x:Null}"/>
-        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Center" Margin="0,341,0,0" VerticalAlignment="Top" Height="33" Width="195" FontSize="16" BorderBrush="{x:Null}" Background="#FFE81616" FontWeight="Bold" Foreground="White" Click="btnDelete_Click">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}" CornerRadius="10">
-                        <!-- Adjust the CornerRadius value to control the corner roundness -->
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="btnCreate" Content="Create Note" HorizontalAlignment="Left" Margin="133,389,0,0" VerticalAlignment="Top" Height="33" Width="195" FontSize="16" BorderBrush="{x:Null}" Background="#FF1667E8" FontWeight="Bold" Foreground="White" Click="btnCreate_Click">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}" CornerRadius="10">
-                        <!-- Adjust the CornerRadius value to control the corner roundness -->
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Center" Margin="0,389,0,0" VerticalAlignment="Top" Height="33" Width="195" FontSize="16" BorderBrush="{x:Null}" Background="#FF1095A0" FontWeight="Bold" Foreground="White" Click="btnUpdate_Click">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}" CornerRadius="10">
-                        <!-- Adjust the CornerRadius value to control the corner roundness -->
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Border Grid.Row="1" Background="#7e5fdc" Width="120" HorizontalAlignment="Left">
+        <Border Grid.Row="1" Background="#7e5fdc" Width="120" HorizontalAlignment="Left" CornerRadius="0 50 0 0" >
             <DockPanel>
                 <StackPanel DockPanel.Dock="Top">
-                    <Button x:Name="btnTask" Style="{StaticResource taskButton}" Margin="10 20 10 10" Click="btnTask_Click">
+                    <Button x:Name="btnTask" Style="{StaticResource taskButton}" Margin="2 40 2 5" Click="btnTask_Click">
                         <StackPanel Orientation="Horizontal">
                             <Icon:PackIconMaterial Kind="FileDocument" Style="{StaticResource taskButtonIcon}"/>
                             <TextBlock Text="Task"/>
                         </StackPanel>
                     </Button>
 
-                    <Button Style="{StaticResource taskButton}" Click="Button_Click">
+                    <Button Style="{StaticResource taskButton}" >
                         <StackPanel Orientation="Horizontal">
                             <Icon:PackIconMaterial Kind="Notebook" Style="{StaticResource taskButtonIcon}"/>
                             <TextBlock Text="Note"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Style="{StaticResource taskButton}" Click="Pomodoro_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Icon:PackIconMaterial Kind="Timer" Style="{StaticResource taskButtonIcon}"/>
+                            <TextBlock Text="Pomodoro"/>
                         </StackPanel>
                     </Button>
 
@@ -85,10 +120,5 @@
             </DockPanel>
 
         </Border>
-        <Label x:Name="lblTitle_Copy" Content="Category:" HorizontalAlignment="Left" Margin="547,74,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <TextBox x:Name="tbCategory" HorizontalAlignment="Left" Margin="553,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="337" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
-        <Label x:Name="lblDesc_Copy" Content="Favorite:" HorizontalAlignment="Left" Margin="549,130,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <RadioButton x:Name="rbYes" Content="Yes" HorizontalAlignment="Left" Margin="553,173,0,0" VerticalAlignment="Top" FontSize="14" />
-        <RadioButton x:Name="rbNo" Content="No" HorizontalAlignment="Left" Margin="629,173,0,0" VerticalAlignment="Top" FontSize="14" />
     </Grid>
 </Page>

@@ -1,10 +1,12 @@
-﻿using Npgsql;
+﻿using MaterialDesignThemes.Wpf;
+using Npgsql;
 using System;
+using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using System.Xml.Linq;
 
 namespace Planify
 {
@@ -22,6 +24,7 @@ namespace Planify
         public int userId;
         public int taskId;
         public DateTime taskCreate;
+        
 
       
 
@@ -32,7 +35,7 @@ namespace Planify
             
             conn = new NpgsqlConnection(connstring);
             InitializeComponent();
-            datePickerDeadline.DisplayDateStart = DateTime.Now;
+            
             NavigationCommands.BrowseBack.InputGestures.Clear();
             NavigationCommands.BrowseForward.InputGestures.Clear();
 
@@ -55,8 +58,35 @@ namespace Planify
                 cmd = new NpgsqlCommand(sql, conn);
                 dt = new DataTable();
                 NpgsqlDataReader rd = cmd.ExecuteReader();
-                dt.Load(rd); 
-                dgTask.ItemsSource = dt.DefaultView;
+                dt.Load(rd);
+                List<TaskLoad> taskList = dt.AsEnumerable().Select(row => {
+                    taskId = row.Field<int>("_taskid");
+                    return new TaskLoad
+                    {
+
+                        TaskId = row.Field<int>("_taskid"),
+                        TaskTitle = row.Field<string>("_taskname"),
+                        TaskCategory = row.Field<string>("_categoryname"),
+                        TaskDescription = row.Field<string>("_taskdescription"),
+                        TaskCreateDate = row.Field<DateTime>("_taskcreatedate"),
+                        TaskDateEnd = row.Field<DateTime>("_taskdeadline"),
+                        TaskIsDone = row.Field<bool>("_taskisdone"),
+                        // Map other properties accordingly
+                    };
+                }).ToList();
+                /* List<Task> taskList = dt.AsEnumerable().Select(row =>
+         new Task("", "", "", "", "", DateTime.Now)
+         {
+
+             Title = row.Field<string>("number"),
+             Description = row.Field<string>("description"),
+             DateCreated = row.Field<DateTime>("dateCreate"),
+             DateTimeEnd = row.Field<DateTime>("dateEnd"),
+             TaskIsDone = row.Field<Boolean>("done")
+
+             // Map other properties accordingly
+         }).ToList();*/
+                dgTask.ItemsSource = taskList;
                 conn.Close();
 
 
@@ -72,7 +102,11 @@ namespace Planify
 
         public void btnCreate_Click(object sender, RoutedEventArgs e)
         {
-            try
+            AddTask addTask = new AddTask();
+            addTask.userId = userId;
+            addTask.thisIsPage = this;
+            addTask.ShowDialog();
+            /*try
             {
                 conn.Open();
                 sql = @"select * from create_tasks(:_categoryname, :_userid, :_taskname, :_taskdescription, :_taskcreatedate, :_taskdeadline, :_taskisdone)";
@@ -105,7 +139,7 @@ namespace Planify
             {
                 MessageBox.Show("Error" + ex.Message, "Create Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
                 conn.Close();
-            }
+            }*/
         }
 
         private void dgTask_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
@@ -121,53 +155,56 @@ namespace Planify
 
         private void dgTask_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            SeeTask seeTask = new SeeTask();
+            
+
+
+
             if (dgTask.SelectedItem != null)
+
             {
-                DataRowView row = dgTask.SelectedItem as DataRowView;
-                if (row != null)
+
+               
+                TaskLoad selectedItem = dgTask.SelectedItem as TaskLoad;
+
+                if (selectedItem != null)
                 {
-                   
+
 
                     // Use the correct column names based on the output
                     // Replace "taskname" and "taskdescription" with the correct column names
-                    tbTitle.Text = row["_taskname"].ToString();
-                   tbDesc.Text = row["_taskdescription"].ToString();
-                    tbCategory.Text = row["_categoryname"].ToString();
-                    taskId = (int)row["_taskid"];
+                    /* tbTitle.Text = row["TaskTitle"].ToString();
+                     taskId = selectedItem.TaskId;
 
-                    if (DateTime.TryParse(row["_taskdeadline"].ToString(), out DateTime taskDeadline))
-                    {
-                        datePickerDeadline.SelectedDate = taskDeadline;
-                    }
-                    else
-                    {
-                        datePickerDeadline.SelectedDate = DateTime.Now;
-                    }
+                     tbTitle.Text = selectedItem.TaskTitle;
+                     tbDesc.Text = selectedItem.TaskDescription;
+                     datePickerDeadline.SelectedDate = selectedItem.TaskDateEnd;
+                     taskCreate = selectedItem.TaskCreateDate;
+                     bool isTaskDone = selectedItem.TaskIsDone;
 
-                    if (DateTime.TryParse(row["_taskcreatedate"].ToString(), out DateTime taskcreatedate))
-                    {
-                        taskCreate = taskcreatedate;
-                    }
-                    else
-                    {
-                        taskCreate = DateTime.Now;
-                    }
+                     if (isTaskDone)
+                     {
+                         rbDone.IsChecked = true;
+
+                     }
+                     else
+                     {
+
+                         rbOngoing.IsChecked = true;
+                     }*/
+                    
+                  
+
+                    seeTask.title.Text = selectedItem.TaskTitle;
+                    seeTask.description.Text = selectedItem.TaskDescription;
+                    seeTask.deadline.Content = selectedItem.TaskDateEnd.ToString("d MMMM yyyy");
+                    seeTask.category.Content = $"Category : {selectedItem.TaskCategory}";
+                   
+                    IconTaskClass iconTaskClass = new IconTaskClass { IconTaskIsDone = selectedItem.TaskIsDone };
+                    seeTask.DataContext = iconTaskClass;
 
 
-
-
-                    bool isTaskDone = Convert.ToBoolean(row["_taskisdone"]);
-
-                    if (isTaskDone)
-                    {
-                        rbDone.IsChecked = true;
-                       
-                    }
-                    else
-                    {
-                        
-                        rbOngoing.IsChecked = true;
-                    }
+                    seeTask.ShowDialog();
                     // Update other text boxes as needed for different columns
                 }
             }
@@ -195,7 +232,53 @@ namespace Planify
 
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
         {
-            try
+            EditTask editTaskPage = new EditTask();
+            editTaskPage.userId = userId;
+          
+            editTaskPage.thisIsPage = this;
+
+            if (dgTask.SelectedItem != null)
+
+            {
+
+               
+                TaskLoad selectedItem = dgTask.SelectedItem as TaskLoad;
+
+                if (selectedItem != null)
+                {
+
+
+                    // Use the correct column names based on the output
+                    // Replace "taskname" and "taskdescription" with the correct column names
+                    /*tbTitle.Text = row["TaskTitle"].ToString();*/
+                   
+
+                    editTaskPage.taskId = selectedItem.TaskId;
+
+                    editTaskPage.tbTitle.Text = selectedItem.TaskTitle;
+                    editTaskPage.tbCategory.Text = selectedItem.TaskCategory;
+                    editTaskPage.tbDesc.Text = selectedItem.TaskDescription;
+
+                    editTaskPage.datePickerDeadline.SelectedDate = selectedItem.TaskDateEnd;
+                    editTaskPage.taskCreate = selectedItem.TaskCreateDate;
+
+
+                    if (selectedItem.TaskIsDone)
+                    {
+                        editTaskPage.rbDone.IsChecked = true;
+
+                    }
+                    else
+                    {
+
+                        editTaskPage.rbOngoing.IsChecked = true;
+                    }
+
+                    editTaskPage.ShowDialog();
+                    // Update other text boxes as needed for different columns
+                }
+            }
+            /*try
             {
                 conn.Open();
                 sql = @"select * from task_update(:_taskid, :_taskname, :_taskdescription, :_taskcreatedate, :_taskdeadline, :_taskisdone)";
@@ -206,7 +289,7 @@ namespace Planify
                 cmd.Parameters.AddWithValue("_taskdescription", tbDesc.Text);
                 cmd.Parameters.Add(new NpgsqlParameter("_taskcreatedate", NpgsqlTypes.NpgsqlDbType.Date)).Value = taskCreate;
                 cmd.Parameters.Add(new NpgsqlParameter("_taskdeadline", NpgsqlTypes.NpgsqlDbType.Date)).Value = datePickerDeadline.SelectedDate;
-                if(rbDone.IsChecked == false && rbOngoing.IsChecked == false)
+                if (rbDone.IsChecked == false && rbOngoing.IsChecked == false)
                 {
                     MessageBox.Show("Silahkan mengisi status task", "Gagal update Task", MessageBoxButton.OK, MessageBoxImage.Information);
                     conn.Close();
@@ -235,7 +318,7 @@ namespace Planify
             {
                 MessageBox.Show("Error" + ex.Message, "Mengupdate task Fail!!", MessageBoxButton.OK, MessageBoxImage.Error);
                 conn.Close();
-            }
+            }*/
         }
 
         
@@ -244,6 +327,7 @@ namespace Planify
         {
             NotesPage newPage = new NotesPage();
             newPage.userId = userId;
+            newPage.btnLoad_Click(newPage.btnLoad, null);
             this.NavigationService.Navigate(newPage);
         }
 
@@ -252,5 +336,26 @@ namespace Planify
             LoginPage newPage = new LoginPage();
             this.NavigationService.Navigate(newPage);
         }
+
+        private void Pomodoro_Click(object sender, RoutedEventArgs e)
+        {
+            PomodoroPage newPage = new PomodoroPage();
+            newPage.userId = userId;
+            this.NavigationService.Navigate(newPage);
+          
+        }
     }
+}
+
+public class TaskLoad
+{
+    public int TaskId { get; set; }
+   
+    public string TaskTitle { get; set; }
+    public string TaskCategory { get; set; }
+    public string TaskDescription{ get; set; }
+    public DateTime TaskCreateDate { get; set; }
+    public DateTime TaskDateEnd { get; set; }
+    public bool TaskIsDone { get; set; }
+    // Other properties for your task class
 }

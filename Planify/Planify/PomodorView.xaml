@@ -1,0 +1,19 @@
+﻿<Window x:Class="Planify.PomodorView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Planify"
+        mc:Ignorable="d"
+        Title="PomodoroView" Height="165" Width="505" Background="Transparent" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="Window_MouseLeftButtonDown" Loaded="Window_Loaded">
+
+    <Border x:Name="borderTimer" CornerRadius="10" Background="#f2f2f2" BorderBrush="Teal" BorderThickness="2">
+        <Grid>
+            <Button x:Name="Close_addTask" Content="x" Margin="461,10,10,121" Background="Transparent" BorderBrush="Transparent" Foreground="Teal" FontSize="20" Width="30" Height="30" FontWeight="Light" Padding="0" Click="Close_Pomodoro"/>
+            <Label x:Name="timerView" Content="00:00:00:00" Height="50" Foreground="Teal" Margin="0,80,0,31" FontWeight="Bold" FontFamily="Segoe UI Black" FontSize="36" HorizontalAlignment="Center" />
+            <Label x:Name="Title" Content="Let's Study" Foreground="Teal" FontWeight="Medium" FontSize="30"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,26,0,0" FontFamily="Rockwell Extra Bold"/>
+        </Grid>
+    </Border>
+
+
+</Window>

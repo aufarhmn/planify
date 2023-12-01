@@ -12,4 +12,8 @@
     <Grid>
         <Frame NavigationUIVisibility="Hidden"/>
     </Grid>
+
+     
+    
+    
 </Window>

@@ -3,6 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:Planify"
       mc:Ignorable="d" 
        ShowsNavigationUI="False"
@@ -10,45 +11,59 @@
      
       Title="LoginPage">
 
-    <Grid Background="#FFD9EC9D" Width="900"  Height="450" >
-        
-        <TextBlock HorizontalAlignment="Left" Margin="528,52,0,0" TextWrapping="Wrap" Text="Planify" VerticalAlignment="Top" FontWeight="Bold" FontSize="48"/>
-        <TextBlock HorizontalAlignment="Left" Margin="550,130,0,0" TextWrapping="Wrap" Text="Welcome back! " VerticalAlignment="Top" FontWeight="Medium" FontSize="16"/>
-        <Label Content="Username" HorizontalAlignment="Left" Margin="478,183,0,0" VerticalAlignment="Top"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="478,222,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="550,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" RenderTransformOrigin="0.183,-1.058" Height="24" TextChanged="TextBox_TextChanged" SelectionOpacity="1" Opacity="0.7" Padding="4,2,0,0">
-            <TextBox.Foreground>
-                <SolidColorBrush Color="Black" Opacity="1"/>
-            </TextBox.Foreground>
-            <TextBox.Background>
-                <SolidColorBrush Color="White" Opacity="0.7"/>
-            </TextBox.Background>
-        </TextBox>
-        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="558,275,0,0" VerticalAlignment="Top" Height="29" Width="98" FontWeight="SemiBold" Foreground="White" Click="btnLogin_Click" >
-            <Button.Background>
-                <SolidColorBrush Color="Black" Opacity="0.695"/>
-            </Button.Background>
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="10"></Setter>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="544,349,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Don't have an account?"/><LineBreak/><Run/></TextBlock>
-        <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Left" Margin="558,370,0,0" VerticalAlignment="Top" Height="27" Width="98" FontWeight="SemiBold" Foreground="White" Click="btnRegister_Click">
-            <Button.Background>
-                <SolidColorBrush Color="Black" Opacity="0.695"/>
-            </Button.Background>
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="10"></Setter>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Border Grid.Row="1" Background="Silver" Width="300" HorizontalAlignment="Left" >
-            <Image Source="{StaticResource logo}"></Image>
+    <Grid Background="#f2f2f2" Width="900"  Height="500" >
+
+
+
+        <TextBlock  HorizontalAlignment="Left" Margin="47,88,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" RenderTransformOrigin="0.297,0.548" />
+        <TextBlock  HorizontalAlignment="Left" Margin="47,120,0,0" TextWrapping="Wrap" Text="Welcome back! This app is to organize your task and  your note" VerticalAlignment="Top" FontWeight="Medium" FontSize="13" Width="319" Opacity="0.7"/>
+
+        <TextBox x:Name="txtName"  BorderThickness="0 0 0 1.5" BorderBrush="#C5C8CC" materialDesign:HintAssist.FloatingOffset="0,-20" materialDesign:HintAssist.Hint="Username"  Margin="47,180,549,0" Style="{StaticResource MaterialDesignFloatingHintTextBox}" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+
+        <Button x:Name="btnLogin" Content="Login" Background="Teal" Foreground="#ffffff" FontSize="15" materialDesign:ButtonAssist.CornerRadius="22" Height="37" Margin="62,343,564,120" Click="btnLogin_Click"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="103,408,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192">
+                <Run Text="Don't have an account? " />
+                <Hyperlink NavigateUri="your_sign_up_page.xaml" Click="btnRegister_Click">
+                    <Run Text="Sign Up" Foreground="#6741D9"  FontWeight="Bold"/>
+                    <Hyperlink.Style>
+                         <Style TargetType="Hyperlink">
+                             <Setter Property="TextDecorations" Value="None"/>
+                         </Style>
+                    </Hyperlink.Style>
+                </Hyperlink>
+        </TextBlock>
+
+        <Border Background="#512DA8" Width="424" Margin="466,10,0,10"  HorizontalAlignment="Left" CornerRadius="15">
+            <Grid>
+                <Image Source="{StaticResource saly}" 
+           HorizontalAlignment="Center" 
+           VerticalAlignment="Center"
+           RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <ScaleTransform ScaleX="0.95" ScaleY="0.95"/>
+                    </Image.RenderTransform>
+                    <Image.Margin>
+                        <Thickness Bottom="150"/>
+                    </Image.Margin>
+                </Image>
+            </Grid>
+
         </Border>
-        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="550,224,0,0" VerticalAlignment="Top" Width="176" Height="22" Opacity="0.7"/>
+        <PasswordBox x:Name="txtPassword" BorderThickness="0 0 0 1.5" BorderBrush="#C5C8CC" materialDesign:HintAssist.FloatingOffset="0,-18" materialDesign:HintAssist.Hint="Password"  Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" VerticalAlignment="Top" Margin="47,230,549,0"/>
+        <CheckBox Margin="47,288,519,163" FontSize="12" >
+            <TextBlock RenderTransformOrigin="1.424,6.891">
+                            <Run Foreground="#b6b6b6">By signing up I agree with</Run>
+                            <Run Foreground="Teal" >terms and conditions</Run>
+            </TextBlock>
+        </CheckBox>
+        <Image Source="{StaticResource logo}" Width="60" Height="50" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 30 30 0" />
+        <TextBlock Foreground="White"  HorizontalAlignment="Left" Margin="507,409,0,0" TextWrapping="Wrap" Text="Top App to bost your productivity and reach best grade in exam" VerticalAlignment="Top" FontWeight="Medium" FontSize="13" Width="318" Opacity="0.7"/>
+        <TextBlock Foreground="White" HorizontalAlignment="Left" Margin="507,360,0,0" TextWrapping="Wrap" Text="Sign In to Planify" VerticalAlignment="Top" FontWeight="Bold" FontSize="33" RenderTransformOrigin="0.297,0.548" />
+
+
     </Grid>
+
 
 </Page>

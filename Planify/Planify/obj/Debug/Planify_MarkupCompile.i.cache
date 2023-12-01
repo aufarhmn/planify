@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\obj\Debug\
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\obj\Debug\
 Planify
 none
 false
 DEBUG;TRACE
-C:\Difta\KULIAH\Semester 5\JunPro\Day2\real program\planify\Planify\Planify\App.xaml
-7-1650513772
+C:\Difta\KULIAH\Semester 5\JunPro\Day2\MyRepo\planify\Planify\Planify\App.xaml
+11-40833675
 
-20-1576364318
-63-1182065693
-CreateTask.xaml;LoginPage.xaml;MainWindow.xaml;NotePage.xaml;NotesPage.xaml;RegisterPage.xaml;TasksPage.xaml;
+252052712527
+6735492806
+AddTask.xaml;CreateNote.xaml;CreateTask.xaml;EditTask.xaml;LoginPage.xaml;MainWindow.xaml;NotePage.xaml;NotesPage.xaml;RegisterPage.xaml;SeeTask.xaml;TasksPage.xaml;
 
 True
 

@@ -38,10 +38,7 @@ namespace Planify
             NavigationCommands.BrowseForward.InputGestures.Clear();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+      
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -74,6 +71,7 @@ namespace Planify
                    
                     TasksPage newPage = new TasksPage();
                     newPage.userId = (int)cmd.ExecuteScalar();
+                   newPage.btnLoad_Click(newPage.btnLoad, null);
                     this.NavigationService.Navigate(newPage);
 
                     conn.Close();
@@ -98,5 +96,7 @@ namespace Planify
                 conn.Close();
             }
         }
+
+        
     }
 }

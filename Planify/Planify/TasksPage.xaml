@@ -10,9 +10,73 @@
            
       
       Title="TasksPage" >
-    <Grid Background="#FFD9EC9D" Height="450" Width="900">
-        <DataGrid x:Name="dgTask" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="134,26,324,114" CellEditEnding="dgTask_CellEditEnding" SelectedCellsChanged="dgTask_SelectedCellsChanged" SelectionChanged="dgTask_SelectionChanged" />
-        <Button x:Name="btnLoad" Content="Load" HorizontalAlignment="Left" Margin="162,353,0,0" VerticalAlignment="Top" Height="33" Width="194" FontSize="16" BorderBrush="{x:Null}" Background="#FF7BE816" FontWeight="Bold" Click="btnLoad_Click">
+
+    <Grid Background="#f2f2f2" Height="450" Width="960" >
+        <TextBlock Text="List Task" FontSize="32" FontWeight="SemiBold" Margin="139,28,0,376" Foreground="#121518" HorizontalAlignment="Left" RenderTransformOrigin="0.873,0.6"/>
+        <Button Style="{StaticResource addButton}" Margin="0,38,40,377" Width="106" Click="btnCreate_Click">
+            <StackPanel Orientation="Horizontal">
+                <Icon:PackIconMaterial Kind="Plus" VerticalAlignment="Center" Margin="0 1 8 0" Width="11" Height="11"/>
+                <TextBlock Text="Add Task"/>
+            </StackPanel>
+        </Button>
+        <DataGrid  Style="{DynamicResource DataGridStyle1}" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" RowStyle="{DynamicResource DataGridRowStyle1}" x:Name="dgTask" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="139,109,40,31" CellEditEnding="dgTask_CellEditEnding" SelectedCellsChanged="dgTask_SelectedCellsChanged" SelectionChanged="dgTask_SelectionChanged" >
+            <DataGrid.Columns>
+
+
+                <DataGridTemplateColumn Header="Task Is Done" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Icon:PackIconMaterial>
+                                    <Icon:PackIconMaterial.Style>
+                                        <Style TargetType="Icon:PackIconMaterial">
+                                            <Setter Property="Kind" Value="CloseCircleOutline"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding TaskIsDone}" Value="True">
+                                                    <Setter Property="Kind" Value="CheckCircleOutline"/>
+                                                    <Setter Property="Foreground" Value="Blue"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding TaskIsDone}" Value="False">
+                                                    <Setter Property="Kind" Value="CloseCircleOutline"/>
+                                                    <Setter Property="Foreground" Value="Red"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Icon:PackIconMaterial.Style>
+                                </Icon:PackIconMaterial>
+                            </ContentControl>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+
+
+
+
+
+                <DataGridTextColumn Header="Title" Binding="{Binding TaskTitle}" IsReadOnly="True" Width="100"/>
+                <DataGridTextColumn Header="Category" Binding="{Binding TaskCategory}" IsReadOnly="True" Width="100"/>
+                <DataGridTextColumn Header="Description" Binding="{Binding TaskDescription}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="Deadline" Binding="{Binding TaskDateEnd}" IsReadOnly="True" Width="100"/>
+
+                <DataGridTemplateColumn x:Name="Operation_section"  Header="Operations" IsReadOnly="False" Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate >
+                            <StackPanel Orientation="Horizontal">
+                                <Button x:Name="btn_update_data"  Style="{StaticResource gridEditButton}" Click="btnUpdate_Click">
+                                    <Icon:PackIconMaterial Kind="PencilOutline" Style="{StaticResource gridButtonIcon}"/>
+                                </Button>
+                                <Button x:Name="btn_delete"  Margin="5 0 0 0" Style="{StaticResource gridRemoveButton}" Click="btnDelete_Click">
+                                    <Icon:PackIconMaterial Kind="DeleteOutline" Style="{StaticResource gridButtonIcon}"/>
+                                </Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnLoad" Content="Load" HorizontalAlignment="Left" Margin="430,401,0,0" VerticalAlignment="Top" Height="33" Visibility="Collapsed" Width="194" FontSize="16" BorderBrush="{x:Null}" Background="#FF7BE816" FontWeight="Bold" Click="btnLoad_Click">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="{TemplateBinding Background}" CornerRadius="10">
@@ -22,44 +86,12 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label x:Name="lblTitle" Content="Title:" HorizontalAlignment="Left" Margin="587,11,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="56"/>
-        <TextBox x:Name="tbTitle" HorizontalAlignment="Left" Margin="585,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="305" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
-        <Label x:Name="lblDesc" Content="Description:" HorizontalAlignment="Left" Margin="587,251,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="112" Height="33"/>
-        <TextBox x:Name="tbDesc" HorizontalAlignment="Left" Margin="585,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="308" Height="150" FontSize="14                  " BorderBrush="{x:Null}"/>
-        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="380,353,0,0" VerticalAlignment="Top" Height="33" Width="196" FontSize="16" BorderBrush="{x:Null}" Background="#FFE81616" FontWeight="Bold" Foreground="White" Click="btnDelete_Click">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}" CornerRadius="10">
-                        <!-- Adjust the CornerRadius value to control the corner roundness -->
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="btnCreate" Content="Create Task" HorizontalAlignment="Left" Margin="162,401,0,0" VerticalAlignment="Top" Height="33" Width="194" FontSize="16" BorderBrush="{x:Null}" Background="#FF1667E8" FontWeight="Bold" Foreground="White" Click="btnCreate_Click">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}" CornerRadius="10">
-                        <!-- Adjust the CornerRadius value to control the corner roundness -->
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="380,401,0,0" VerticalAlignment="Top" Height="33" Width="196" FontSize="16" BorderBrush="{x:Null}" Background="#FF1095A0" FontWeight="Bold" Foreground="White" Click="btnUpdate_Click">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}" CornerRadius="10">
-                        <!-- Adjust the CornerRadius value to control the corner roundness -->
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Border Grid.Row="1" Background="#7e5fdc" Width="120" HorizontalAlignment="Left">
+
+
+        <Border Grid.Row="1" Background="#7e5fdc" Width="120" HorizontalAlignment="Left" CornerRadius="0 50 0 0" >
             <DockPanel>
                 <StackPanel DockPanel.Dock="Top">
-                    <Button Style="{StaticResource taskButton}" Margin="10 20 10 10">
+                    <Button Style="{StaticResource taskButton}" Margin="2 40 2 5" >
                         <StackPanel Orientation="Horizontal">
                             <Icon:PackIconMaterial Kind="FileDocument" Style="{StaticResource taskButtonIcon}"/>
                             <TextBlock Text="Task"/>
@@ -70,6 +102,12 @@
                         <StackPanel Orientation="Horizontal">
                             <Icon:PackIconMaterial Kind="Notebook" Style="{StaticResource taskButtonIcon}"/>
                             <TextBlock Text="Note"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Style="{StaticResource taskButton}" Click="Pomodoro_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Icon:PackIconMaterial Kind="Timer" Style="{StaticResource taskButtonIcon}"/>
+                            <TextBlock Text="Pomodoro"/>
                         </StackPanel>
                     </Button>
 
@@ -84,12 +122,6 @@
             </DockPanel>
 
         </Border>
-        <Label x:Name="lblTitle_Copy" Content="Category:" HorizontalAlignment="Left" Margin="587,70,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="99"/>
-        <TextBox x:Name="tbCategory" HorizontalAlignment="Left" Margin="588,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="305" Height="26" FontSize="16" BorderBrush="{x:Null}"/>
-        <DatePicker x:Name="datePickerDeadline" HorizontalAlignment="Left" Margin="588,163,0,0" VerticalAlignment="Top" />
-        <Label x:Name="lblTitle_Copy1" Content="Deadline:" HorizontalAlignment="Left" Margin="587,131,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="99"/>
-        <Label x:Name="lblTitle_Copy2" Content="Status:" HorizontalAlignment="Left" Margin="587,195,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="99"/>
-        <RadioButton x:Name="rbDone" Content="Done" HorizontalAlignment="Left" Margin="594,229,0,0" VerticalAlignment="Top" FontSize="14" />
-        <RadioButton x:Name="rbOngoing" Content="Ongoing" HorizontalAlignment="Left" Margin="661,229,0,0" VerticalAlignment="Top" FontSize="14" />
+        <DataGrid HorizontalAlignment="Left" Height="66" Margin="372,480,0,0" VerticalAlignment="Top" Width="6" d:ItemsSource="{d:SampleData ItemCount=5}"/>
     </Grid>
 </Page>
